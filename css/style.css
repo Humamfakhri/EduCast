@@ -1,0 +1,50 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    --primary: #700B97;
+    --bg: #19162B;
+}
+
+body {
+    background-color: #19162B;
+}
+
+/* HERO */
+.section-hero {
+    position: relative;
+    padding-bottom: 200px;
+}
+.section-hero::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../img/wave-hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 440px;
+    width: 350px;
+    bottom: 150px;
+    left: 0;
+    z-index: -1;
+}
+.section-hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../img/blur-hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    width: 900px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.section-hero h1 {
+    font-size: 56px;
+}
+.section-hero p {
+    font-size: 1.25rem;
+}
+.explore-btn {
+    background-color: #700B97;
+}
