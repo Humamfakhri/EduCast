@@ -8,6 +8,25 @@ body {
     background-color: #19162B;
 }
 
+/* NAVBAR */
+.navbar {
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index:1030
+}
+.navbar-brand img {
+    width: 60px;
+}
+.navbar-brand div {
+    font-size: 22px;
+}
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
 /* HERO */
 .section-hero {
     position: relative;
@@ -47,4 +66,77 @@ body {
 }
 .explore-btn {
     background-color: #700B97;
+}
+
+/* BREAKPOINT MD */
+@media screen and (max-width: 992px) {
+    .navbar {
+        position:unset;
+    }
+    .navbar-brand img {
+        width: 50px;
+    }
+    .navbar-brand div {
+        font-size: 20px;
+    }
+    .section-hero {
+        text-align: center;
+    }
+    .section-hero h1 {
+        font-size: 45px;
+    }
+    .section-hero p {
+        font-size: 18px;
+    }
+    .section-hero img {
+        margin-top: 20px;
+        width: 500px;
+    }
+    .section-hero::before {
+        bottom: 660px;
+        height: 270px;
+        width: 240px;
+        bottom: 200px;
+    }
+    .btn-utama {
+        padding: 16px 27px;
+        font-size: 16px;
+    }
+    .btn-kedua {
+        padding: 16px 27px;
+        font-size: 16px;
+    }
+}
+
+/* BREAKPOINT SM */
+@media screen and (max-width: 576px) {
+    .navbar-brand img {
+        width: 40px;
+    }
+    .navbar-brand div {
+        font-size: 18px;
+    }
+    .section-hero h1 {
+        font-size: 32px;
+    }
+    .section-hero p {
+        font-size: 16px;
+    }
+    .section-hero img {
+        margin-top: 20px;
+        width: 400px;
+    }
+    .section-hero::before {
+        bottom: 590px;
+        height: 281px;
+        width: 242px;
+    }
+    .btn-utama {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+    .btn-kedua {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
 }

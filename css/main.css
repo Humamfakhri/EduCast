@@ -23,7 +23,15 @@
     color: #fff;
     border: 1px solid #fff;
 }
-.btn-kedua:hover {
+.btn-kedua:hover,.btn-kedua-mini:hover {
     color: var(--primary);
     border: 1px solid var(--primary);
+}
+.btn-kedua-mini {
+    background: transparent;
+    padding: 9px 15px;
+    border-radius: 50px;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 14px;
 }
