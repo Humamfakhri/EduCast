@@ -98,6 +98,7 @@ body {
 }
 .section-fitur .box-isi {
     background-color: #3C2055;
+    height: 100%;
     padding: 2px;
     border-radius: 20px;
 }
@@ -108,6 +109,9 @@ body {
     color: #EAD2F3;
 }
 /* SECTION REKOMENDASI */
+.section-rekomendasi {
+    margin-bottom: 200px;
+}
 .card {
     border-radius: 20px;
     background-color: var(--bg-second);
@@ -123,18 +127,25 @@ body {
     bottom: -10%;
     width: 28%;
 }
-.module-border-wrap {
-    max-width: 250px;
-    padding: 1rem;
+/* SECTION TESTIMONI */
+.section-test {
+    margin-bottom: 200px;
+}
+.section-test .box {
+    padding: 2px;
     position: relative;
     background: linear-gradient(150deg , #B800FF, #700B97, #2DDAC5);
-    padding: 3px;
-  }
-.module {
-    background: #222;
-    color: white;
-    padding: 2rem;
-  }
+    border-radius: 20px;
+}
+.section-test .box-isi {
+    background-color: #3C2055;
+    height: 100%;
+    padding: 2px;
+    border-radius: 20px;
+}
+.nama-tester {
+    font-size: 18px;
+}
 
 
 /* == BREAKPOINT MD == */
@@ -251,10 +262,7 @@ body {
     }
     /* FITUR */
     .section-fitur {
-        margin-bottom: 50px;
-    }
-    .section-fitur .box {
-        padding-top: 40px;
+        margin-bottom: 100px;
     }
     .section-fitur .box .title-fitur {
         font-size: 14px;
@@ -263,6 +271,9 @@ body {
         font-size: 12px;
     }
     /* REKOMENDASI */
+    .section-rekomendasi {
+        margin-bottom: 100px;
+    }
     .card {
         width: 90%;
         margin: 0 auto;
@@ -278,5 +289,15 @@ body {
     }
     .card .icon img {
         width: 18px;
+    }
+    /* TESTIMONI */
+    .section-test .box p {
+        font-size: 14px;
+    }
+    .test-profil p {
+        font-size: 16px;
+    }
+    .test-profil small {
+        font-size: 12px;
     }
 }
