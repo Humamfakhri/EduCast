@@ -91,7 +91,14 @@ body {
     margin-bottom: 70px;
 }
 .section-fitur .box {
+    padding: 2px;
+    position: relative;
+    background: linear-gradient(150deg , #B800FF, #700B97, #2DDAC5);
+    border-radius: 20px;
+}
+.section-fitur .box-isi {
     background-color: #3C2055;
+    padding: 2px;
     border-radius: 20px;
 }
 .section-fitur .box .title-fitur {
@@ -116,6 +123,18 @@ body {
     bottom: -10%;
     width: 28%;
 }
+.module-border-wrap {
+    max-width: 250px;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(150deg , #B800FF, #700B97, #2DDAC5);
+    padding: 3px;
+  }
+.module {
+    background: #222;
+    color: white;
+    padding: 2rem;
+  }
 
 
 /* == BREAKPOINT MD == */
