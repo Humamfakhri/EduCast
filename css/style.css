@@ -2,6 +2,7 @@
     font-family: 'Montserrat', sans-serif;
     --primary: #700B97;
     --bg: #19162B;
+    --bg-second: #3C2055;
 }
 
 body {
@@ -83,6 +84,9 @@ body {
     background-color: #700B97;
 }
 /* FITUR */
+.section-fitur {
+    margin-bottom: 200px;
+}
 .section-fitur h1 {
     margin-bottom: 70px;
 }
@@ -95,6 +99,22 @@ body {
 }
 .section-fitur .box p {
     color: #EAD2F3;
+}
+/* SECTION REKOMENDASI */
+.card {
+    border-radius: 20px;
+    background-color: var(--bg-second);
+}
+.card img {
+    border-radius: 20px;
+}
+.card p {
+    color: #EAD2F3;
+}
+.card .card-play {
+    right: 0;
+    bottom: -10%;
+    width: 28%;
 }
 
 
@@ -140,6 +160,9 @@ body {
         font-size: 16px;
     }
     /* FITUR */
+    .section-fitur {
+        margin-bottom: 100px;
+    }
     .section-fitur h1 {
         margin-bottom: 30px;
     }
@@ -148,24 +171,41 @@ body {
         border-radius: 20px;
     }
     .section-fitur .box .title-fitur {
-        font-size: 16px;
+        font-size: 18px;
     }
     .section-fitur .box p {
         font-size: 14px;
     }
-    /* .section-fitur img {
-        width: 100px;
-    } */
+
+    /* REKOMENDASI */
+    .card .card-title {
+        font-size: 18px;
+    }
+    .card p {
+        font-size: 14px;
+    }
+    .card .icon {
+        font-size: 14px;
+    }
+    .card .icon img {
+        width: 20px;
+        font-size: 14px;
+    }
 }
 
 
 /* BREAKPOINT SM */
 @media screen and (max-width: 576px) {
+    /* NAVBAR */
     .navbar-brand img {
         width: 40px;
     }
     .navbar-brand div {
         font-size: 18px;
+    }
+    /* HERO */
+    .section-hero {
+        padding-bottom: 50px;
     }
     .section-hero h1 {
         font-size: 32px;
@@ -178,9 +218,9 @@ body {
         width: 400px;
     }
     .section-hero::before {
-        bottom: 590px;
-        height: 281px;
-        width: 242px;
+        bottom: 500px;
+        height: 181px;
+        width: 142px;
     }
     .btn-utama {
         padding: 15px 25px;
@@ -191,6 +231,9 @@ body {
         font-size: 14px;
     }
     /* FITUR */
+    .section-fitur {
+        margin-bottom: 50px;
+    }
     .section-fitur .box {
         padding-top: 40px;
     }
@@ -199,5 +242,22 @@ body {
     }
     .section-fitur .box p {
         font-size: 12px;
+    }
+    /* REKOMENDASI */
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .card .card-title {
+        font-size: 16px;
+    }
+    .card p {
+        font-size: 12px;
+    }
+    .card .icon {
+        font-size: 12px;
+    }
+    .card .icon img {
+        width: 18px;
     }
 }
