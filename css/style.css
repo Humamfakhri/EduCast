@@ -43,7 +43,7 @@ body {
     font-size: 22px;
     transition: .2s;
 }
-/* HERO */
+/* SECTION HERO */
 .section-hero {
     position: relative;
     padding-bottom: 200px;
@@ -83,7 +83,7 @@ body {
 .explore-btn {
     background-color: #700B97;
 }
-/* FITUR */
+/* SECTION FITUR */
 .section-fitur {
     margin-bottom: 200px;
 }
@@ -145,6 +145,58 @@ body {
 }
 .nama-tester {
     font-size: 18px;
+}
+/* SECTION DOWNLOAD */
+.section-download {
+    position: relative;
+    background-color: var(--primary);
+}
+.section-download::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../img/wave-download.png);
+    background-repeat: no-repeat;
+    height: 60%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.section-download a {
+    font-weight: 500;
+}
+.section-download .title {
+    line-height: 1.2;
+}
+/* FOOTER */
+footer {
+    margin-top: 120px;
+}
+footer a {
+    color: inherit;
+}
+footer .clear a:hover {
+    opacity: .6;
+}
+footer ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, .6);
+}
+footer ul li a:hover {
+    color: #fff;
+}
+footer .float-end:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+footer .hr {
+    margin-top: 70px;
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary);
+}
+.clear {
+    clear: left;
 }
 
 

@@ -1,11 +1,14 @@
 * {
     --primary: #700B97;
 }
-.font-large {
+.font-18 {
+    font-size: 18px;
+}
+.font-56 {
     font-size: 56px;
 }
-.font-giant {
-    font-size: 72px;
+.font-64 {
+    font-size: 64px;
 }
 .font-pop {
     font-family: 'Poppins', sans-serif;
@@ -15,6 +18,14 @@
     padding: 18px 30px;
     border-radius: 50px;
     color: #fff;
+    text-decoration: none;
+}
+.btn-utama-putih {
+    background-color: #fff;
+    padding: 18px 30px;
+    border-radius: 50px;
+    color: var(--primary);
+    text-decoration: none;
 }
 .btn-kedua {
     background: transparent;
