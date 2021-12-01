@@ -60,10 +60,10 @@
     <section class="section-fitur">
         <div class="container-md">
             <h1 class="text-light fw-bold">Temani Harimu dengan<br>Fitur Terseru!</h1>
-            <div class="row justify-content-lg-between justify-content-center align-items-center">
-                <div class="col-lg-4">
+            <div class="row justify-content-md-between justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-5">
                     <div class="row mb-lg-0 mb-5">
-                        <div class="col col-lg-12 d-flex ">
+                        <div class="col col-md-12 mb-4 mb-lg-0 d-flex ">
                             <div class="box text-center text-light">
                                 <div class="box-isi px-3 py-lg-4 py-3">
                                     <img src="img/live-podcast.png" alt="">
@@ -72,7 +72,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-lg-12 d-flex  my-lg-4">
+                        <div class="col col-md-12 mb-4 d-flex  my-lg-4">
                             <div class="box text-center text-light">
                                 <div class="box-isi px-3 py-lg-4 py-3">
                                     <img src="img/ruang-diskusi.png" alt="">
@@ -81,7 +81,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-lg-12 d-flex ">
+                        <div class="col col-md-12 mb-4 d-flex ">
                             <div class="box text-center text-light">
                                 <div class="box-isi px-3 py-lg-4 py-3">
                                     <img src="img/audiobook.png" alt="">
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7 col-7">
+                <div class="col-md-7 col-7">
                     <img src="img/design-mobile.png" class="img-fluid">
                 </div>
             </div>
@@ -313,13 +313,23 @@
     <!-- SECTION DOWNLOAD -->
     <section class="section-download">
         <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-5">
-                    <div class="font-56 fw-bold text-light title mb-5">Cara Baru<br>Buat Dapetin<br>Pengetahuan</div>
-                    <a href="#" class="btn-utama-putih font-pop me-3">Playstore</a>
-                    <a href="#" class="btn-utama-putih font-pop">App Store</a>
+            <div class="row">
+                <div class="col-ld-5 col-md-8 cta-download">
+                    <div class="font-56 fw-bold text-light title">Cara Baru<br>Buat Dapetin<br>Pengetahuan.</div>
+                    <h2 class="fw-bold text-light mt-2 mb-4">Unduh Sekarang Juga!</h2>
+                    <a href="#" class="btn btn-utama-putih font-pop me-3">
+                        <img src="img/icon-playstore.svg" alt="">
+                        Playstore
+                    </a>
+                    <a href="#" class="btn btn-utama-putih font-pop">
+                        <img src="img/icon-appstore.svg" alt="">    
+                        App Store
+                    </a>
                 </div>
-                <div class="col-6"><img src="img/download.png" class="img-fluid" alt=""></div>
+                <div class="col-ld-6 col-md-4 scroll-app">
+                    <img src="img/screen-l.png" class="screen-app-l pe-2" alt="">
+                    <img src="img/screen-r.png" class="screen-app-r ps-2 d-none d-lg-block" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -389,8 +399,16 @@
             pagination : false,
             arrows     : false,
             drag       : 'free',
+            breakpoints: {
+                992 : {
+                    perPage : 2, 
+                },
+                576 : {
+                    perPage : 1,
+                },
+            },
             autoScroll: {
-                speed: 2,
+                speed: 1.3,
             },
         } );
 
