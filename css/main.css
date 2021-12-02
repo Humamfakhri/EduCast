@@ -2,6 +2,7 @@
     --primary: #700B97;
     --bg: #19162B;
     --bg-second: #3C2055;
+    --paragraf: #D5CFD7;
 }
 .font-18 {
     font-size: 18px;
@@ -14,6 +15,9 @@
 }
 .font-pop {
     font-family: 'Poppins', sans-serif;
+}
+.fw-medium {
+    font-weight: 500;
 }
 .btn-utama {
     background-color: #700B97;
