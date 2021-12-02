@@ -1,5 +1,7 @@
 * {
     --primary: #700B97;
+    --bg: #19162B;
+    --bg-second: #3C2055;
 }
 .font-18 {
     font-size: 18px;
@@ -19,6 +21,9 @@
     border-radius: 50px;
     color: #fff;
     text-decoration: none;
+}
+.btn-utama:hover {
+    color: var(--bg);
 }
 .btn-utama-putih {
     background-color: #fff;
