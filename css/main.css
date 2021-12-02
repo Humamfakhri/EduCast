@@ -27,6 +27,9 @@
     color: var(--primary);
     text-decoration: none;
 }
+.btn-utama-putih:hover {
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important
+}
 .btn-kedua {
     background: transparent;
     padding: 18px 30px;
