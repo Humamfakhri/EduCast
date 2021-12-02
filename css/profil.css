@@ -3,6 +3,7 @@
     --primary: #700B97;
     --bg: #19162B;
     --bg-second: #3C2055;
+    --paragraf: #D5CFD7;
 }
 
 body {
@@ -75,6 +76,78 @@ body {
     font-size: 72px;
     line-height: 1.2;
 }
+/* INTRO */
+.section-intro {
+    background-color: var(--bg-second);
+}
+/* ZIDAN */
+.zidan .deskripsi {
+    line-height: 1.7;
+    color: var(--paragraf);
+}
+.zidan a:hover {
+    opacity: 0.5;
+}
+/* HUMAM */
+.humam {
+    background-color: var(--bg-second);
+}
+.humam .deskripsi {
+    line-height: 1.7;
+    color: var(--paragraf);
+}
+/* SEKOLAH */
+.sekolah {
+    padding: 100px 0;
+    overflow: hidden;
+}
+.blur {
+    position: relative;
+}
+.sekolah p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.8;
+}
+.sekolah .yt {
+    bottom: 0;
+    left: 50px;
+}
+/* FOOTER */
+/* FOOTER */
+footer {
+    margin-top: 120px;
+}
+footer a {
+    color: inherit;
+}
+footer .clear a:hover {
+    opacity: .6;
+}
+footer ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, .6);
+}
+footer ul li a:hover {
+    color: #fff;
+}
+footer .float-end:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+footer .hr {
+    margin-top: 70px;
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary);
+}
+.clear {
+    clear: left;
+}
+.w-md-auto {
+    width: auto;
+}
+
 
 
 
