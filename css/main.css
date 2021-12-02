@@ -4,11 +4,14 @@
 .font-18 {
     font-size: 18px;
 }
+.font-42 {
+    font-size: 42px;
+}
 .font-56 {
     font-size: 56px;
 }
 .font-64 {
-    font-size: 64px;
+    font-size: 72px;
 }
 .font-pop {
     font-family: 'Poppins', sans-serif;
@@ -19,6 +22,12 @@
     border-radius: 50px;
     color: #fff;
     text-decoration: none;
+}
+.btn-utama:hover {
+    padding: 15px 27px;
+    background-color: transparent;
+    border: 3px solid var(--primary);
+    color: var(--primary);
 }
 .btn-utama-putih {
     background-color: #fff;
