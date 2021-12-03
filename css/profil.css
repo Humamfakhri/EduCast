@@ -41,8 +41,12 @@
 /* INTRO */
 .section-intro {
     background-color: var(--bg-second);
+    padding: 100px 0;
 }
 /* ZIDAN */
+/* .zidan .col-5 {
+    height: 100%;
+} */
 .zidan .deskripsi {
     line-height: 1.7;
     color: var(--paragraf);
@@ -92,7 +96,7 @@
         font-size: 38px;
     }
     .section-hero .quote {
-        font-size: 64px;
+        font-size: 62px;
         line-height: 1.2;
     }
 
@@ -106,6 +110,10 @@
         left: 50%;
         width: calc(80% - 24px);
         transform: translateX(-50%);
+    }
+    /* INTRO */
+    .section-intro p {
+        font-size: 17px;
     }
 }
 
