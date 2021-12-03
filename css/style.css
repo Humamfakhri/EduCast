@@ -8,41 +8,7 @@
 body {
     background-color: #19162B;
 }
-/* NAVBAR */
-.navbar {
-    position:fixed;
-    top:0;
-    right:0;
-    left:0;
-    z-index:1030;
-    padding: 15px 0;
-    transition: .2s;
-}
-.navbar-brand img {
-    width: 65px;
-    transition: .2s;
-}
-.navbar-brand div {
-    font-size: 24px;
-    transition: .2s;
-}
-.nav-link {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-.nav-scrolled {
-    background: #3C2055;
-    padding: 10px 0;
-    transition: .2s;
-}
-.nav-scrolled .navbar-brand img {
-    width: 50px;
-    transition: .2s;
-}
-.nav-scrolled .navbar-brand div {
-    font-size: 22px;
-    transition: .2s;
-}
+
 /* SECTION HERO */
 .section-hero {
     position: relative;
@@ -192,17 +158,6 @@ body {
 .cta-download {
     padding: 120px 0;
 }
-/* .section-download::after {
-    content: '';
-    display: block;
-    position: absolute;
-    background-image: url(../img/wave-download.png);
-    background-repeat: no-repeat;
-    height: 60%;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-} */
 .scroll-app {
     position: relative;
     overflow: hidden;
@@ -229,53 +184,9 @@ body {
 .section-download .title {
     line-height: 1.2;
 }
-/* FOOTER */
-footer {
-    margin-top: 120px;
-}
-footer a {
-    color: inherit;
-}
-footer .clear a:hover {
-    opacity: .6;
-}
-footer ul li a {
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: rgba(255, 255, 255, .6);
-}
-footer ul li a:hover {
-    color: #fff;
-}
-footer .float-end:hover {
-    color: rgba(255, 255, 255, 0.6);
-}
-footer .hr {
-    margin-top: 70px;
-    height: 3px;
-    width: 100%;
-    background-color: var(--primary);
-}
-.clear {
-    clear: left;
-}
-.w-md-auto {
-    width: auto;
-}
-
 
 /* == BREAKPOINT MD == */
 @media screen and (max-width: 992px) {
-    /* NAVBAR */
-    .navbar {
-        position: fixed;
-    }
-    .navbar-brand img {
-        width: 50px;
-    }
-    .navbar-brand div {
-        font-size: 20px;
-    }
     /* HERO */
     .section-hero {
         text-align: center;
@@ -293,14 +204,6 @@ footer .hr {
         top: 100px;
         width: 200px;
         /* height: 270px; */
-    }
-    .btn-utama {
-        padding: 16px 27px;
-        font-size: 16px;
-    }
-    .btn-kedua {
-        padding: 16px 27px;
-        font-size: 16px;
     }
     /* FITUR */
     .section-fitur {
@@ -349,13 +252,6 @@ footer .hr {
 
 /* BREAKPOINT SM */
 @media screen and (max-width: 576px) {
-    /* NAVBAR */
-    .navbar-brand img {
-        width: 40px;
-    }
-    .navbar-brand div {
-        font-size: 18px;
-    }
     /* HERO */
     .section-hero {
         padding-bottom: 50px;
@@ -375,14 +271,6 @@ footer .hr {
         bottom: 500px;
         height: 181px;
         width: 142px;
-    }
-    .btn-utama {
-        padding: 15px 25px;
-        font-size: 14px;
-    }
-    .btn-kedua {
-        padding: 15px 25px;
-        font-size: 14px;
     }
     /* FITUR */
     .section-fitur {

@@ -6,44 +6,6 @@
     --paragraf: #D5CFD7;
 }
 
-body {
-    background-color: #19162B;
-}
-/* NAVBAR */
-.navbar {
-    position:fixed;
-    top:0;
-    right:0;
-    left:0;
-    z-index:1030;
-    padding: 15px 0;
-    transition: .2s;
-}
-.navbar-brand img {
-    width: 65px;
-    transition: .2s;
-}
-.navbar-brand div {
-    font-size: 24px;
-    transition: .2s;
-}
-.nav-link {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-.nav-scrolled {
-    background: #3C2055;
-    padding: 10px 0;
-    transition: .2s;
-}
-.nav-scrolled .navbar-brand img {
-    width: 50px;
-    transition: .2s;
-}
-.nav-scrolled .navbar-brand div {
-    font-size: 22px;
-    transition: .2s;
-}
 /* HERO */
 .section-hero {
     height: 100vh;
@@ -113,60 +75,22 @@ body {
     text-justify: inter-word;
     line-height: 1.8;
 }
-.sekolah .yt {
-    bottom: 0;
-    left: 50px;
+.profile-img {
+    width: 70%;
+    margin: auto;
 }
-/* FOOTER */
-/* FOOTER */
-footer {
-    margin-top: 120px;
-}
-footer a {
-    color: inherit;
-}
-footer .clear a:hover {
-    opacity: .6;
-}
-footer ul li a {
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: rgba(255, 255, 255, .6);
-}
-footer ul li a:hover {
-    color: #fff;
-}
-footer .float-end:hover {
-    color: rgba(255, 255, 255, 0.6);
-}
-footer .hr {
-    margin-top: 70px;
-    height: 3px;
-    width: 100%;
-    background-color: var(--primary);
-}
-.clear {
-    clear: left;
-}
-.w-md-auto {
-    width: auto;
+.embed-youtube {
+    position: absolute;
+    bottom: -40px;
+    width: 80%;
 }
 
+.embed-youtube iframe {
+    border-radius: 20px;
+}
 
-
-
-/* == BREAKPOINT LG == */
+/* == BREAKPOINT MD == */
 @media screen and (max-width: 992px) {
-    /* NAVBAR */
-    .navbar {
-        position:unset;
-    }
-    .navbar-brand img {
-        width: 50px;
-    }
-    .navbar-brand div {
-        font-size: 20px;
-    }
     /* HERO */
     .section-hero .tim {
         font-size: 38px;
@@ -175,32 +99,17 @@ footer .hr {
         font-size: 62px;
         line-height: 1.2;
     }
-    /* PROFIL */
-    .sekolah .coba img {
-        width: 44%;
+
+    /* SEKOLAH */
+    .profile-img {
+        width: 80%;
+        margin: auto;
     }
-    .sekolah .yt {
+    .embed-youtube {
         bottom: 0;
-        left: 22%;
-    }
-    .sekolah .display-4 {
-        text-align: center;
-    }
-}
-
-
-/* BREAKPOINT MD */
-@media screen and (max-width: 768px) {
-    .section-download .title {
-        font-size: 30px;
-    }
-    /* HERO */
-    .section-hero .tim {
-        font-size: 34px;
-    }
-    .section-hero .quote {
-        font-size: 58px;
-        line-height: 1.2;
+        left: 50%;
+        width: calc(80% - 24px);
+        transform: translateX(-50%);
     }
     /* INTRO */
     .section-intro p {
@@ -208,16 +117,8 @@ footer .hr {
     }
 }
 
-
 /* BREAKPOINT SM */
 @media screen and (max-width: 576px) {
-    /* NAVBAR */
-    .navbar-brand img {
-        width: 40px;
-    }
-    .navbar-brand div {
-        font-size: 18px;
-    }
     /* HERO */
     .section-hero .tim {
         font-size: 30px;
@@ -232,5 +133,14 @@ footer .hr {
     }
     .btn-utama:hover {
         padding: 13px 24px;
+    }
+
+    /* SEKOLAH */
+    .profile-img {
+        width: 100%;
+    }
+
+    .embed-youtube {
+        width: calc(100% - 24px);
     }
 }

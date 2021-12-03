@@ -4,6 +4,17 @@
     --bg-second: #3C2055;
     --paragraf: #D5CFD7;
 }
+body {
+    background-color: #19162B;
+}
+.clear {
+    clear: left;
+}
+.w-md-auto {
+    width: auto;
+}
+
+/* FONT */
 .font-18 {
     font-size: 18px;
 }
@@ -19,6 +30,8 @@
 .fw-medium {
     font-weight: 500;
 }
+
+/* BUTTONS */
 .btn-utama {
     background-color: #700B97;
     padding: 18px 30px;
@@ -58,4 +71,115 @@
     color: #fff;
     border: 1px solid #fff;
     font-size: 14px;
+}
+
+/* NAVBAR */
+.navbar {
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index:1030;
+    padding: 15px 0;
+    transition: .2s;
+}
+.navbar-brand img {
+    width: 65px;
+    transition: .2s;
+}
+.navbar-brand div {
+    font-size: 24px;
+    transition: .2s;
+}
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.nav-scrolled {
+    background: #3C2055;
+    padding: 10px 0;
+    transition: .2s;
+}
+.nav-scrolled .navbar-brand img {
+    width: 50px;
+    transition: .2s;
+}
+.nav-scrolled .navbar-brand div {
+    font-size: 22px;
+    transition: .2s;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+footer a {
+    color: inherit;
+}
+footer .clear a:hover {
+    opacity: .6;
+}
+footer ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, .6);
+}
+footer ul li a:hover {
+    color: #fff;
+}
+footer .float-end:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+footer .hr {
+    margin-top: 70px;
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary);
+}
+
+/* == BREAKPOINT MD == */
+@media screen and (max-width: 992px) {
+    /* BUTTONS */
+    .btn-utama {
+        padding: 16px 27px;
+        font-size: 16px;
+    }
+    .btn-kedua {
+        padding: 16px 27px;
+        font-size: 16px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        position: fixed;
+    }
+    .navbar-brand img {
+        width: 50px;
+    }
+    .navbar-brand div {
+        font-size: 20px;
+    }
+    
+}
+
+/* == BREAKPOINT SM == */
+@media screen and (max-width: 576px) {
+    /* BUTTONS */
+    .btn-utama {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+    .btn-kedua {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+
+    /* NAVBAR */
+    .navbar-brand img {
+        width: 40px;
+    }
+    .navbar-brand div {
+        font-size: 18px;
+    }
 }
