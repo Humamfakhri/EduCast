@@ -79,8 +79,12 @@ body {
 /* INTRO */
 .section-intro {
     background-color: var(--bg-second);
+    padding: 100px 0;
 }
 /* ZIDAN */
+/* .zidan .col-5 {
+    height: 100%;
+} */
 .zidan .deskripsi {
     line-height: 1.7;
     color: var(--paragraf);
@@ -168,8 +172,19 @@ footer .hr {
         font-size: 38px;
     }
     .section-hero .quote {
-        font-size: 64px;
+        font-size: 62px;
         line-height: 1.2;
+    }
+    /* PROFIL */
+    .sekolah .coba img {
+        width: 44%;
+    }
+    .sekolah .yt {
+        bottom: 0;
+        left: 22%;
+    }
+    .sekolah .display-4 {
+        text-align: center;
     }
 }
 
@@ -186,6 +201,10 @@ footer .hr {
     .section-hero .quote {
         font-size: 58px;
         line-height: 1.2;
+    }
+    /* INTRO */
+    .section-intro p {
+        font-size: 17px;
     }
 }
 
