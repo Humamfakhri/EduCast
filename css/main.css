@@ -13,6 +13,9 @@ body {
 .w-md-auto {
     width: auto;
 }
+.bg-second {
+    background-color: var(--bg-second);
+}
 
 /* FONT */
 .font-18 {
@@ -30,8 +33,17 @@ body {
 .fw-medium {
     font-weight: 500;
 }
+.font-abu {
+    color: #D5CFD7;
+}
 
 /* BUTTONS */
+.hover-white {
+    color: #fff;
+}
+.hover-white:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
 .btn-utama {
     background-color: #700B97;
     padding: 18px 30px;
@@ -73,16 +85,21 @@ body {
     font-size: 14px;
 }
 
-/* NAVBAR */
-.navbar {
-    position:fixed;
-    top:0;
-    right:0;
-    left:0;
-    z-index:1030;
-    padding: 15px 0;
-    transition: .2s;
-}
+    /* NAVBAR */
+    .navbar {
+        position:fixed;
+        top:0;
+        right:0;
+        left:0;
+        z-index:1030;
+        padding: 15px 0;
+        transition: .2s;
+    }
+    .nav-scrolled {
+        background: #3C2055;
+        padding: 10px 0;
+        transition: .2s;
+    }
 .navbar-brand img {
     width: 65px;
     transition: .2s;
@@ -149,10 +166,21 @@ footer .hr {
         padding: 16px 27px;
         font-size: 16px;
     }
-
     /* NAVBAR */
     .navbar {
+        position:static;
+        z-index:1030;
+        padding: 15px 0;
+        transition: .2s;
+    }
+    .nav-scrolled {
         position: fixed;
+        top:0;
+        right:0;
+        left:0;
+        background: #3C2055;
+        padding: 10px 0;
+        transition: .2s;
     }
     .navbar-brand img {
         width: 50px;
