@@ -200,6 +200,9 @@ body {
         margin-top: 20px;
         width: 500px;
     }
+    .section-hero::after {
+        top: -280px;
+    }
     .section-hero::before {
         top: 100px;
         width: 200px;
