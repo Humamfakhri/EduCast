@@ -82,7 +82,7 @@ body {
 .splide__track {
     padding: 40px 0;
 }
-.splide__list .splide__slide:nth-child(even){
+.kategori-slide .splide__list .splide__slide:nth-child(even){
     margin-top: 100px;
 }
 .kategori-item {
@@ -112,20 +112,17 @@ body {
 .section-rekomendasi {
     margin-bottom: 200px;
 }
-.card {
-    border-radius: 20px;
+.card-podcast {
+    padding: 16px 14px;
     background-color: var(--bg-second);
+    border-radius: 10px;
 }
-.card img {
-    border-radius: 20px;
+.card-podcast img {
+    border-radius: 10px;
 }
-.card p {
-    color: #EAD2F3;
-}
-.card .card-play {
-    right: 0;
-    bottom: -10%;
-    width: 28%;
+.shadow-purple {
+    -webkit-filter: drop-shadow(0 20px 35px rgba(183, 0, 255, 0.5));
+    filter: drop-shadow(0 20px 35px rgba(183, 0, 255, 0.5));
 }
 /* SECTION TESTIMONI */
 .section-test {
