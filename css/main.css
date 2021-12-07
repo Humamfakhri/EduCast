@@ -4,6 +4,12 @@
     --bg-second: #3C2055;
     --paragraf: #D5CFD7;
 }
+h1,h2,h3,h4,h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+p, span, a, small, li {
+    font-family: 'Poppins', sans-serif;
+}
 body {
     background-color: #19162B;
 }
@@ -15,6 +21,9 @@ body {
 }
 .bg-second {
     background-color: var(--bg-second);
+}
+.paragraf {
+    color: var(--paragraf);
 }
 
 /* FONT */
