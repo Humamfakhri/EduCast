@@ -44,12 +44,14 @@
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg text-light">
-                    <h1 class="fw-bold mb-4">Berbagai Topik Buat Nambah Wawasan-mu!</h1>
-                    <p class="font-pop fw-light mb-5">Berdiskusi langsung, berbagi pengetahuan atau pengalaman dengan puluhan topik dan ribuan orang.</p>
-                    <a href="#" class="btn font-pop btn-utama me-md-3 mb-3 mb-md-0 w-md-auto">Download Aplikasi</a>
-                    <a href="#" class="btn font-pop btn-kedua w-md-auto">Jelajahi Podcast</a>
+                    <h1 class="fw-bold mb-3 hero-heading">Cara Baru <br> Buat Nambah <br> Wawasan Kamu</h1>
+                    <p class="font-pop fw-light mb-5 hero-paragraf">Puluhan topik dan ribuan podcast keren menantimu!</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn font-pop btn-utama me-md-3 mb-3 mb-md-0 w-md-auto">Download Aplikasi</a>
+                        <a href="#" class="btn font-pop btn-kedua w-md-auto">Jelajahi Podcast</a>
+                    </div>
                 </div>
-                <div class="col-lg">
+                <div class="col-lg hero-img">
                     <img src="img/hero.png" class="img-fluid">
                 </div>
             </div>
@@ -60,38 +62,41 @@
     <!-- SECTION FITUR (2) -->
     <section class="section-fitur">
         <div class="container">
-            <h1 class="text-light fw-bold">Temani Harimu <br>dengan Fitur Terseru!</h1>
+            <h1 class="text-light fw-bold heading-fitur">Temani Harimu <br>dengan Fitur Terseru!</h1>
             <div class="row justify-content-md-between justify-content-center align-items-center">
-                <div class="col-md-7 col-11 order-md-2 my-5 my-md-0">
-                    <img src="img/design-mobile.png" class="img-fluid">
+                <div class="col-md-7 col-11 order-md-2 my-5 my-md-0 app-screen position-relative">
+                    <img src="img/box-audiobook.jpg" class="box-fitur box-audiobook" alt="">
+                    <img src="img/box-podcast.jpg" class="box-fitur box-podcast" alt="">
+                    <img src="img/box-live.jpg" class="box-fitur box-live" alt="">
+                    <img src="img/design-mobile.png" class="img-fluid fitur-img">
                 </div>
 
                 <div class="col-lg-4 col-md-5 order-md-1">
                     <div class="row mb-lg-0 mb-5">
                         <div class="col-12 mb-4 mb-lg-0 d-flex ">
-                            <div class="box text-center text-light">
+                            <div class="box w-100 text-center text-light">
                                 <div class="box-isi px-3 py-lg-4 py-3">
                                     <img src="img/live-podcast.png" alt="">
                                     <div class="title-fitur fw-bold my-2">Live Podcast</div>
-                                    <p class="w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="w-75 mx-auto">Dengarkan podcast secara live dari para pembicara hebat.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 mb-4 d-flex my-lg-4">
-                            <div class="box text-center text-light">
+                            <div class="box w-100 text-center text-light">
                                 <div class="box-isi px-3 py-lg-4 py-3">
                                     <img src="img/ruang-diskusi.png" alt="">
                                     <div class="title-fitur fw-bold my-2">Ruang Diskusi</div>
-                                    <p class="w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="w-75 mx-auto">Berdiskusi dengan pembicara ataupun para pendengar lainnya.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 mb-4 d-flex ">
-                            <div class="box text-center text-light">
+                            <div class="box w-100 text-center text-light">
                                 <div class="box-isi px-3 py-lg-4 py-3">
                                     <img src="img/audiobook.png" alt="">
                                     <div class="title-fitur fw-bold my-2">Podcast & Audiobook</div>
-                                    <p class="w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="w-75 mx-auto">Dapatkan audiobook & podcast untuk kamu simpan dan dengarkan.</p>
                                 </div>
                             </div>
                         </div>
@@ -189,6 +194,22 @@
                     <div class="splide podcast-slide">
                         <div class="splide__track">
                               <ul class="splide__list">
+                                  <li class="splide__slide text-white card-podcast">
+                                      <img src="img/cover-1.jpg" class="w-100" alt="">
+                                      <div class="caption">
+                                          <p class="mb-1 mt-3 fw-bold lh-sm">Mengenal Machine Learning </p>
+                                          <span class="d-block paragraf">Kode Talk</span>
+                                          <small class="paragraf">18 Menit</small>
+                                      </div>
+                                  </li>
+                                    <li class="splide__slide text-white card-podcast">
+                                        <img src="img/cover-1.jpg" class="w-100" alt="">
+                                        <div class="caption">
+                                            <p class="mb-1 mt-3 fw-bold lh-sm">Jangan Lelah Berbuat Baik</p>
+                                            <span class="d-block paragraf">Terus Berjuang</span>
+                                            <small class="paragraf">12 Menit</small>
+                                        </div>
+                                    </li>
                                     <li class="splide__slide text-white card-podcast">
                                         <img src="img/cover-1.jpg" class="w-100" alt="">
                                         <div class="caption">
@@ -211,32 +232,52 @@
         <div class="container">
             <h1 class="text-light fw-bold mb-5">Mereka yang<br>Sudah Bergabung</h1>
             <div class="row">
-                <div class="col-md-6 col-12 mb-3">
-                    <div class="box">
-                        <div class="box-isi text-light px-4 py-5">
-                            <p class="font-pop fw-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                            <div class="d-flex align-items-center mt-4">
-                                <img src="img/testi-1.png" >
-                                <div class="test-profil ms-2">
-                                    <p class="font-pop fw-bold m-0 nama-tester">Tony Haryadi</p>
-                                    <small class="font-pop fw-light">Pelajar</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12">
-                    <div class="box">
-                        <div class="box-isi text-light px-4 py-5">
-                            <p class="font-pop fw-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                            <div class="d-flex align-items-center mt-4">
-                                <img src="img/testi-2.png" >
-                                <div class="test-profil ms-2">
-                                    <p class="font-pop fw-bold m-0 nama-tester">Natasha Kusmawati</p>
-                                    <small class="font-pop fw-light">Mahasiswi</small>
-                                </div>
-                            </div>
-                        </div>
+                <div class="splide testi">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide">
+                                  <div class="box">
+                                      <div class="box-isi text-light px-4 py-5">
+                                          <p class="font-pop fw-lighter">Awalnya ga ngerti platform apa ini, tapi setelah nyobain beberapa minggu ternyata lumayan bermanfaat buat nambah wawasan/edukasi cuma dengan ngedengerin.</p>
+                                          <div class="d-flex align-items-center mt-4">
+                                              <img src="img/testi-1.png" >
+                                              <div class="test-profil ms-2">
+                                                  <p class="font-pop fw-bold m-0 nama-tester">Tony Haryadi</p>
+                                                  <small class="font-pop fw-light">Pelajar</small>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li class="splide__slide">
+                                    <div class="box">
+                                        <div class="box-isi text-light px-4 py-5">
+                                            <p class="font-pop fw-lighter">Aku bisa dengerin podcast edukasi ini sambil kerja. Hemat waktu. jadi bisa kerja sambil dapetin edukasi yang ga berat buat dipahami. </p>
+                                            <div class="d-flex align-items-center mt-4">
+                                                <img src="img/testi-2.png" >
+                                                <div class="test-profil ms-2">
+                                                    <p class="font-pop fw-bold m-0 nama-tester">Natasha Kusmawati</p>
+                                                    <small class="font-pop fw-light">Mahasiswi</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                              </li>
+                              <li class="splide__slide">
+                                    <div class="box">
+                                        <div class="box-isi text-light px-4 py-5">
+                                            <p class="font-pop fw-lighter">Aku bisa dengerin podcast edukasi ini sambil kerja. Hemat waktu. jadi bisa kerja sambil dapetin edukasi yang ga berat buat dipahami. </p>
+                                            <div class="d-flex align-items-center mt-4">
+                                                <img src="img/testi-2.png" >
+                                                <div class="test-profil ms-2">
+                                                    <p class="font-pop fw-bold m-0 nama-tester">Natasha Kusmawati</p>
+                                                    <small class="font-pop fw-light">Mahasiswi</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                              </li>
+                          </ul>
                     </div>
                 </div>
             </div>
@@ -261,9 +302,9 @@
                     </a>
                 </div>
                 <div class="col-lg-6 col-md-4 scroll-app">
-                    <img src="img/screen-l.png" class="screen-app-l pe-2 d-none d-md-block" alt="">
-                    <img src="img/screen-r.png" class="screen-app-r ps-2 d-none d-lg-block" alt="">
-                    <img src="img/screen-hr.png" class="screen-app-hr mx-auto d-md-none" alt="">
+                    <img src="img/screen-l.png" class="screen-app-l pe-2 d-none d-lg-block" alt="">
+                    <img src="img/screen-r.png" class="screen-app-r ps-2 d-none d-md-block" alt="">
+                    <img src="img/screen-hr.png" class="screen-app-hr d-md-none" alt="">
                 </div>
             </div>
         </div>
@@ -317,6 +358,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.6/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.3.1/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 
     <script>
         window.addEventListener('scroll', function(){
@@ -349,11 +392,28 @@
         } );
         kategoriSlide.mount(window.splide.Extensions);
 
+        var testi = new Splide( '.testi', {
+            type   : 'loop',
+            gap: 30,
+            perPage: 2,
+            autoplay: true,
+            breakpoints: {
+                992 : {
+                    perPage : 1, 
+                },
+                576 : {
+                    perPage : 1,
+                },
+            }
+        } );
+        testi.mount();
+
         const podcastSlide = new Splide( '.podcast-slide', {
             type: 'loop',
             perPage: 2,
             gap: 16,
             pagination: false,
+            autoplay: true,
             breakpoints: {
                 992 : {
                     padding: {right: 80},
@@ -367,8 +427,46 @@
             
         })
         podcastSlide.mount();
-        
 
+        // HERO ANIMATION
+        const hero = gsap.timeline({defaults:{opacity: 0, duration: 1}});
+        hero.from('.hero-heading',{y: 400})
+            .from('.hero-paragraf', {y: 300}, "<+=0.5")
+            .from('.hero-buttons', {y: 200},"<+=0.5")
+            .from('.hero-img', {x: 400},"<+=0.5")
+                    
+        // FITUR ANIMATION
+        const fitur = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".heading-fitur",
+                start: "top center", // when the top of the trigger hits the top of the viewport
+                end: "-=150", // end after scrolling 500px beyond the start
+                scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+            }
+        })
+        fitur.to('.box-audiobook', {y: -150, x:-100, rotation: -9})
+             .to('.box-podcast', {y: -300, rotation: -32}, "<")
+             .to('.box-live', {y: -150, x: 100, rotation: 18}, "<")
+
+        // DOWNLOAD ANIMATION
+        const download = gsap.timeline({
+            scrollTrigger: {
+                start: 'top bottom',
+                trigger: '.section-download',
+                scrub: true
+            },
+        });
+
+        download.to('.screen-app-l', {y: -400})
+        download.to('.screen-app-r', {y: 400}, "<")
+        gsap.to(".screen-app-hr", {
+            x: -300,
+            scrollTrigger: {
+                start: 'top top',
+                trigger: '.section-download',
+                scrub: true
+            },
+        })
     </script>
 
     </body>
