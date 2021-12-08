@@ -193,7 +193,7 @@ main {
     color: #fff;
     text-align: center;
     text-shadow: 0 0 4px black;
-    font-family: 'Montserrat', sans-serif<a href="index.html" class="back-btn me-2 d-none d-lg-block">;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* BREAKPOINT MD */
@@ -274,5 +274,8 @@ main {
     }
     .section-header .carousel img {
         border-radius: 20px;
+    }
+    .kategori-item h4 {
+        font-size: 18px;
     }
 }
