@@ -3,15 +3,13 @@
     --bg: #19162B;
     --bg-second: #3C2055;
 }
-
 body {
     background-color: #19162B;
-}
-
-
-body {
     overflow-x: hidden;
     overflow-y: hidden;
+}
+#app {
+    overflow-x: hidden;
 }
 
 body.loaded {
@@ -20,7 +18,9 @@ body.loaded {
 body.loaded .preload {
     display: none;
 }
-
+.font-mont {
+    font-family: 'Montserrat', sans-serif;
+}
 /* PRELOAD */
 .preload {
     height: 100vh;

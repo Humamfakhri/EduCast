@@ -54,6 +54,7 @@ window.addEventListener('load',function(){
                 arrows: false
             },
             576 : {
+                padding: {right: 80},
                 perPage : 1,
             },
         }
