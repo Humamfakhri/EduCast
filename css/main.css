@@ -94,21 +94,21 @@ body {
     font-size: 14px;
 }
 
-    /* NAVBAR */
-    .navbar {
-        position:fixed;
-        top:0;
-        right:0;
-        left:0;
-        z-index:1030;
-        padding: 15px 0;
-        transition: .2s;
-    }
-    .nav-scrolled {
-        background: #3C2055;
-        padding: 10px 0;
-        transition: .2s;
-    }
+/* NAVBAR */
+.navbar {
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index:1030;
+    padding: 15px 0;
+    transition: .2s;
+}
+.nav-scrolled {
+    background: #3C2055;
+    padding: 10px 0;
+    transition: .2s;
+}
 .navbar-brand img {
     width: 65px;
     transition: .2s;
@@ -191,6 +191,14 @@ footer .hr {
         padding: 10px 0;
         transition: .2s;
     }
+    .nav-scrolled .navbar-brand div {
+        font-size: 18px;
+        transition: .2s;
+    }
+    .nav-scrolled .navbar-brand img {
+        width: 45px;
+        transition: .2s;
+    }
     .navbar-brand img {
         width: 50px;
     }
@@ -213,6 +221,14 @@ footer .hr {
     }
 
     /* NAVBAR */
+    .nav-scrolled .navbar-brand div {
+        font-size: 16px;
+        transition: .2s;
+    }
+    .nav-scrolled .navbar-brand img {
+        width: 35px;
+        transition: .2s;
+    }
     .navbar-brand img {
         width: 40px;
     }
