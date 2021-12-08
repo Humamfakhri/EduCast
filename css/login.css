@@ -23,6 +23,9 @@ body {
     background-color: var(--bg);
     color: var(--paragraf);
 }
+.beranda:hover {
+    opacity: 0.6;
+}
 .link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
@@ -31,7 +34,6 @@ body {
     color: rgba(255, 255, 255, 0.6);
     opacity: 0.8;
 }
-
 @media screen and (max-width: 991.98px){
     body {
         background-image: url(../img/hero-blog.png);

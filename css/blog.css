@@ -21,7 +21,7 @@ body::before {
     z-index: -1;
 }
 .blog {
-    padding-top: 150px;
+    padding-top: 100px;
     margin-bottom: 300px;
 }
 .blog .atas {
@@ -63,6 +63,9 @@ body::before {
 
 /* == BREAKPOINT MD == */
 @media screen and (max-width: 991.98px) {
+    .blog {
+        padding-top: 20px;
+    }
     .blog .hero {
         text-align: center;
     }
