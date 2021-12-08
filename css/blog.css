@@ -20,6 +20,10 @@ body::before {
     top: 0;
     z-index: -1;
 }
+.search-blog,
+.search-blog:focus {
+    background-color: var(--bg);
+}
 .blog {
     padding-top: 100px;
     margin-bottom: 300px;
@@ -54,6 +58,10 @@ body::before {
     border-radius: 20px;
     transition: .3s;
     color: inherit;
+    height: 100%;
+}
+.blog .card-blog .card img {
+    border-radius: 20px;
 }
 .blog .card-blog .card:hover {
     box-shadow:0 1rem 3rem rgba(0,0,0,.175)!important;
