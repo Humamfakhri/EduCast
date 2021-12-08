@@ -3,6 +3,7 @@
     --bg: #19162B;
     --bg-second: #3C2055;
     --paragraf: #D5CFD7;
+    font-family: 'Poppins', sans-serif;
 }
 body {
     background-color: var(--bg);
@@ -153,6 +154,9 @@ main {
 .trending-slide .splide__slide img {
     border-radius: 10px;
 }
+.trending-slide .caption p {
+    font-weight: lighter;
+}
 
 /* SECTION CONTINUE */
 .recent-item .cover {
@@ -189,6 +193,7 @@ main {
     color: #fff;
     text-align: center;
     text-shadow: 0 0 4px black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* BREAKPOINT MD */
