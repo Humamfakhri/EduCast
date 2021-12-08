@@ -17,11 +17,16 @@
     </head>
 
     <body>
+    <div id="app">
     <div class="preload">
-        <div class="bar-1"></div>
-        <div class="bar-2"></div>
-        <div class="bar-3"></div>
-        <div class="bar-4"></div>
+        <h1>MEMUAT</h1>
+        <div class="bounce">
+            <span class="bounce-item"></span>
+            <span class="bounce-item"></span>
+            <span class="bounce-item"></span>
+            <span class="bounce-item"></span>
+            <span class="bounce-item"></span>
+        </div>
     </div>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -310,7 +315,7 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-5 col-md-8 cta-download text-center text-md-start">
-                    <div class="font-56 fw-bold text-light title">Cara Baru<br>Buat Dapetin<br>Pengetahuan.</div>
+                    <h1 class="font-56 fw-bold text-white">Dengerin Podcast Kesukaanmu</h1>
                     <h2 class="fw-bold text-light mt-2 mb-4">Unduh Sekarang Juga!</h2>
                     <a href="#" class="btn btn-utama-putih w-md-auto font-pop me-md-3 mb-3 mb-md-0">
                         <img src="img/icon-playstore.svg" alt="">
@@ -374,13 +379,13 @@
     <!-- FOOTER END -->
 
     
-    
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.6/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.3.1/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-
+    <script src="js/index.js"></script>
     <script>
         window.addEventListener('scroll', function(){
             let header = document.querySelector('nav');
@@ -388,105 +393,6 @@
 
             header.classList.toggle('nav-scrolled', windowPosition);
         });
-
-        const kategoriSlide = new Splide( '.kategori-slide', {
-            type       : 'loop',
-            padding    : '5rem',
-            perPage    : 4,
-            perMove    : 1,
-            gap        : '2rem',
-            pagination : false,
-            arrows     : false,
-            drag       : 'free',
-            breakpoints: {
-                992 : {
-                    perPage : 2, 
-                },
-                576 : {
-                    perPage : 1,
-                },
-            },
-            autoScroll: {
-                speed: 1.3,
-            },
-        } );
-        kategoriSlide.mount(window.splide.Extensions);
-
-        var testi = new Splide( '.testi', {
-            type   : 'loop',
-            gap: 30,
-            perPage: 2,
-            autoplay: true,
-            breakpoints: {
-                992 : {
-                    perPage : 1, 
-                },
-                576 : {
-                    perPage : 1,
-                },
-            }
-        } );
-        testi.mount();
-
-        const podcastSlide = new Splide( '.podcast-slide', {
-            type: 'loop',
-            perPage: 2,
-            gap: 16,
-            pagination: false,
-            autoplay: true,
-            breakpoints: {
-                992 : {
-                    padding: {right: 80},
-                    perPage : 1, 
-                    arrows: false
-                },
-                576 : {
-                    perPage : 1,
-                },
-            }
-            
-        })
-        podcastSlide.mount();
-
-        // HERO ANIMATION
-        const hero = gsap.timeline({defaults:{opacity: 0, duration: 1}});
-        hero.from('.hero-heading',{y: 400})
-            .from('.hero-paragraf', {y: 300}, "<+=0.5")
-            .from('.hero-buttons', {y: 200},"<+=0.5")
-            .from('.hero-img', {x: 400},"<+=0.5")
-                    
-        // FITUR ANIMATION
-        const fitur = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".heading-fitur",
-                start: "top center", // when the top of the trigger hits the top of the viewport
-                end: "-=150", // end after scrolling 500px beyond the start
-                scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-            }
-        })
-        fitur.to('.box-audiobook', {y: -150, x:-100, rotation: -9})
-             .to('.box-podcast', {y: -300, rotation: -32}, "<")
-             .to('.box-live', {y: -150, x: 100, rotation: 18}, "<")
-
-        // DOWNLOAD ANIMATION
-        const download = gsap.timeline({
-            scrollTrigger: {
-                start: 'top bottom',
-                trigger: '.section-download',
-                scrub: true
-            },
-        });
-
-        download.to('.screen-app-l', {y: -400})
-        download.to('.screen-app-r', {y: 400}, "<")
-        gsap.to(".screen-app-hr", {
-            x: -300,
-            scrollTrigger: {
-                start: 'top top',
-                trigger: '.section-download',
-                scrub: true
-            },
-        })
     </script>
 
     </body>
