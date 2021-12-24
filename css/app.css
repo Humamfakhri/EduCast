@@ -196,7 +196,7 @@ main {
 .recent-item .cover img {
     border-radius: 10px;
 }
-.recent-item .player {
+.recent-item .player-btn {
     width: 70%;
 }
 
@@ -227,28 +227,53 @@ main {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* MUSIC PLAYER */
-.player {
+/* SOUND PLAYER */
+.sound-player {
     position: fixed;
+    width: 100%;
+    background-color: var(--bg);
+    border-top: 2px solid #634381;
+    z-index: 5;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 90px;
-    background-color: var(--bg);
-    z-index: 5;
-    border-top: 2px solid #634381;
 }
-.player .container-fluid {
+.sound-player .container-fluid {
     padding: 0 25px;
 }
 .sound-desc .cover {
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    transform: translateY(-50%);
+    width: 80px;
+    transform: translateY(-30px);
 }
 .sound-desc img {
     border-radius: 15px;
+}
+.timeline-bar {
+    width: 100%;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 2px;
+    position: relative;
+}
+progress::-webkit-progress-value {
+    background: var(--primary); 
+}
+progress::-webkit-progress-bar {
+    background: var(--bg-second); 
+}
+.timeline-bar::after,
+.timeline-bar::before {
+    color: #fff;
+    position: absolute;
+    font-size: 12px;
+    top: 4px;
+}
+.timeline-bar::after {
+    content: "12:43";
+    right: 0;
+}
+.timeline-bar::before {
+    content: "03:12";
+    left: 0;
 }
 /* BREAKPOINT MD */
 @media screen and (max-width: 992px) {
@@ -280,7 +305,7 @@ main {
         background-color: var(--bg-second);
         padding: 25px;
         padding-bottom: 90px;
-        z-index: 5;
+        z-index: 6;
         transition: .5s;
     }
     aside.show {
@@ -291,6 +316,22 @@ main {
     }
     .section-header .carousel img {
         border-radius: 40px;
+    }
+    .sound-player {
+        padding: 12px 0;
+    }
+    .sound-player::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 40%;
+        height: 3px;
+        background-color: var(--primary);
+        top: 0;
+        left: 0;
+    }
+    .sound-desc .cover {
+        transform: translateY(0);
     }
 }
 
