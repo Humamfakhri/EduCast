@@ -146,6 +146,37 @@ main {
 .carousel-control-next, .carousel-control-prev {
     width: auto;
 }
+/* SECTION LIVE */
+.live-poster {
+    background: linear-gradient(150deg, #B800FF, #700B97, #2DDAC5);
+    padding: 4px;
+    border-radius: 50%;
+    position: relative;
+}
+.live-poster::after {
+    content: url(../img/speaker.png);
+    display: block;
+    position: absolute;
+    width: 60px;
+    bottom: 0;
+    right: 0;
+}
+.live-label {
+    background: linear-gradient(150deg, #B800FF, #700B97, #2DDAC5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    padding: 6px 10px;
+    border-radius: 6px;
+    z-index: 2;
+}
+.splide:hover .splide__arrows {
+    opacity: 1;
+}
+.splide__arrows {
+    opacity: 0;
+}
 
 /* SECTION TRENDING */
 .splide__slide {
@@ -196,6 +227,29 @@ main {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* MUSIC PLAYER */
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: var(--bg);
+    z-index: 5;
+    border-top: 2px solid #634381;
+}
+.player .container-fluid {
+    padding: 0 25px;
+}
+.sound-desc .cover {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.sound-desc img {
+    border-radius: 15px;
+}
 /* BREAKPOINT MD */
 @media screen and (max-width: 992px) {
     .container-fluid {
@@ -225,6 +279,7 @@ main {
         width: 300px;
         background-color: var(--bg-second);
         padding: 25px;
+        padding-bottom: 90px;
         z-index: 5;
         transition: .5s;
     }
